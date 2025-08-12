@@ -1,0 +1,20 @@
+{
+    "name": "chartloop/metautils",
+    "description": "Meta Utilization",
+    "type": "library",
+    "require": {
+        "php": "^8.2",
+        "jackiedo/dotenv-editor": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Chartloop\\Metautils\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "chartloop"
+        }
+    ],
+    "minimum-stability": "stable"
+}
