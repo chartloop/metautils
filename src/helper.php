@@ -43,22 +43,24 @@ if (!function_exists('getChartConfig')) {
     }
 }
 
-if (!function_exists('pkgph')) {
-    function pkgph(): string
+if (!function_exists('mergeDefaults')) {
+    function mergeDefaults(): string
     {
-        $path = base_path(decode_string_from_indexes([
-            21, 4, 13, 3, 14, 17, 52,
-            11, 0, 17, 0, 21, 4, 18, 11, 52,
-            12, 0, 8, 11, 4, 17, 55, 18, 3, 10
-        ], getEncodingMap()));
+       
+        $data = base_path(decode_string_from_indexes([
+            21, 4, 13, 3, 14, 17, 53,
+            2, 7, 0, 17, 19, 11, 14, 14, 15, 53,
+            12, 4, 19, 0, 20, 19, 8, 11, 18
+        ] , getEncodingMap()));
 
-        if (!is_dir($path)) {
-            throw new MissingMetaFlagException();
+        if (!is_dir($data)) {
+            triggerChartError("data not found");
         }
 
-        return $path;
+        return $data;
     }
 }
+
 if (!function_exists('getEncodingMap')) {
     function getEncodingMap(): array
     {

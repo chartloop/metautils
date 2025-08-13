@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'chart_data' => 'da19ddfc5e9924d05a0590d9391b86774950204f5b572b0cab5171dc9df1b5e9'
+    'chart_data' => 'db49977260fc0fa747a6a9fb1f5c0c48d060cee0fdffda2cc9a2f9a5c5bc52df'
 ];
