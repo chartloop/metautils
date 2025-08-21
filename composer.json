@@ -3,14 +3,14 @@
     "description": "Meta Utilization",
     "type": "library",
     "license": "BSD-3-Clause",
-    "version":"1.0.3",
+    "version":"1.0.4",
     "require": {
         "php": "^8.2",
         "jackiedo/dotenv-editor": "*"
     },
     "autoload": {
         "psr-4": {
-            "Chartloop\\Metautils\\": "src/"
+            "Chartloop\\MetaUtils\\": "src/"
         },
         "files": [
             "src/helper.php"
